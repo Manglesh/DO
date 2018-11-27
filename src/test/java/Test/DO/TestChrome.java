@@ -9,7 +9,7 @@ public class TestChrome {
 
 	
 	public static void main(String s[]) {
-		System.setProperty("webdriver.chrome.driver", "/Users/mangleshpareek/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", new File(".").getCanonicalFile()+ "\\Drivers\\Chrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 		//WebDriver wd= new FirefoxDriver();
         driver.get("https://google.com");
